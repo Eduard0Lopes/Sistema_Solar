@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background: url("./img/background-image-galaxy.gif");
+    background-color: black;
+    color: white;
+    font-size: 16px;
+}
+
+@font-face {
+    font-family: Gruppo Regular;
+    src: url('Gruppo-Regular.ttf') format(opentype);
+}
+
+/* Home */
+
+.home-title,
+.home-paragraph {
+    background-color: #242038b4;
+    border-radius: 20px;
+}
+
+.section-div-home {
+    text-align: center;
+    padding: 21%;
+    background: url(./img/stars-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: solid;
+}
+
+/* Container dos planetas */
+
+.container {
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: #11111193;
+    border-radius: 50px;
+    margin: 3%;
+}
+
+.container:hover {
+    box-shadow: 0px 1px 100px #ffffffd2;
+}
+
+/* Fim do container dos planetas */
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title,
+.home-title {
+    font-size: 4vw;
+    font-family: 'Gruppo Regular', sans-serif;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 3vw;
+    font-family: 'Gruppo Regular', sans-serif;
+}
+
+.paragraph,
+.home-paragraph {
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+/* Responsividade */
+
+/* Celular */
+@media screen and (max-width: 1076px) {
+    body{
+        margin: 0;
+    }
+
+    .section-div-home{
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .img{
+        width: 30%;
+        height: auto;
+    }
+
+    .container:hover {
+    box-shadow: 0px 1px 50px #ffffffd2;
+}
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+        margin: auto;
+
+    }
+}
